@@ -125,3 +125,26 @@
     color: #fff;
     margin: 40px 0px 0px 30px;
 }
+
+
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #fff;
+    text-decoration: none;
+}
