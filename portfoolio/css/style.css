@@ -81,3 +81,32 @@
 .navbar {
     margin: 0px;
 }
+
+
+.sinineala {
+    height: 140px;
+    background-color: #0586ff;
+    color: #fff;
+    padding: 20px 0px 0px 20px;
+}
+
+
+.skills {
+    padding: 20px 0px 20px 0px;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+.skills h3, .skills p {
+    padding-left: 20px;
+}
+
+
+.progress {
+    margin: 0px 20px 0px 20px;
+}
+
+.pealkiri {
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+}
