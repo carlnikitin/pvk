@@ -49,7 +49,7 @@
 }
 
 .resume {
-    background-color: #2db04f;
+    background-color: #ffc902;
     color: #fff;
     padding: 20px 0px 20px 20px;
 }
@@ -102,4 +102,8 @@ a:hover {
 a:active {
     color: #fff;
     text-decoration: none;
+}
+
+img {
+    width: 400px;
 }
