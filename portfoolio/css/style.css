@@ -1,0 +1,43 @@
+* {
+    font-family: 'Catamaran', sans-serif;
+}
+
+.containerr {
+    width: 400px;
+    margin: auto;
+}
+
+.containerr img {
+    width: 400px;
+}
+
+.first {
+    background-color: #3b4249;
+    height: 150px;
+}
+
+.first h3 {
+    display: inline;
+    color: #fff;
+    padding: 0px 20px 0px 50px;
+    font-size: 40px;
+    line-height: 150px;
+}
+
+.second {
+    background-color: #000;
+    height: 60px;
+    margin-bottom: 0px;
+}
+
+.second p {
+    color: #fff;
+    line-height: 60px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.fab {
+    color: #fff;
+    padding-left: 20px;
+}
