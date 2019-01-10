@@ -1,0 +1,22 @@
+.pealkiri {
+    text-align: center;
+    margin: 30px 0px 80px 0px;
+}
+
+.praed {
+    float: left;
+}
+
+.praed2 {
+    text-align: center;
+}
+
+.hinnad {
+    float: right;
+    color: #fff;
+    background-color: #ff5176;
+    border-radius: 20%;
+    padding: 2px;
+}
+
+
