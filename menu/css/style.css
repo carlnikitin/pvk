@@ -19,4 +19,12 @@
     padding: 2px;
 }
 
+span.hinnad2 {
+    float: right;
+    color: #fff;
+    background-color: green;
+    border-radius: 20%;
+    padding: 2px;
+}
+
 

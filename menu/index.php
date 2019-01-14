@@ -1,9 +1,16 @@
+<?php
+    function soodus($hind, $soodusProtsent) {
+        return round ($hind * ((100 - $soodusProtsent) / 100), 2);
+    }
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tartu KHK söökla</title>
+    <title>Tartu KHK menüü</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
 
@@ -56,7 +63,8 @@
             foreach ($praed as $praad=>$info) {
             echo '<ul class="list-group list-group-flush">'.
                     '<li class="list-group-item">'.$info['nimetus'].' <br>'
-                    .$info['kirjeldus'].' <span class="hinnad">'.$info['hind'].'</span></li>
+                    .$info['kirjeldus'].' <span class="hinnad">'.$info['hind'].'<br>'.'
+                    <span class="hinnad2">'.soodus($info['hind'], 15).'€'.'</span> </li>
                
             </ul>';
             }
@@ -68,13 +76,30 @@
             <div class="card-header praed2">
                 Magustoidud<br> <i class="fas fa-utensil-spoon"></i>
             </div>
+
             <?php
-            echo'
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Rosinakissell vahukoorega <span class="hinnad">1.2€</span></li>
-                <li class="list-group-item">Kuivatatud puuviljad <span class="hinnad">1.6€</span></li>
-                <li class="list-group-item">Moosisai <span class="hinnad">0.4€</span></li>
+            $magustoidud = array(
+                array (
+                    'nimetus' => 'Rosinakissell vahukoorega',
+                    'hind' => '1.4€'
+                ),
+                array (
+                    'nimetus' => 'Mannavaht piimaga',
+                    'hind' => '1.2€'
+                ),
+                array (
+                    'nimetus' => 'Moosisai',
+                    'hind' => '0.4€'
+                ),
+            );
+
+            foreach ($magustoidud as $magustoit=>$info2) {
+                echo '<ul class="list-group list-group-flush">'.
+                    '<li class="list-group-item">'.$info2['nimetus']
+                    .' <span class="hinnad">'.$info2['hind'].'<br>'.'
+                    <span class="hinnad2">'.soodus($info2['hind'], 15).'€'.'</span> </li>
             </ul>';
+            }
             ?>
         </div>
 
@@ -84,14 +109,29 @@
                 Joogid<br> <i class="fas fa-coffee"></i>
             </div>
             <?php
-            echo'
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Mahl <span class="hinnad">0.6€</span></li>
-                <li class="list-group-item">Piim <span class="hinnad">0.4€</span></li>
-                <li class="list-group-item">Koolipiim <span class="hinnad">0.3€</span></li>
-                <li class="list-group-item">Keefir <span class="hinnad">0.4€</span></li>
-                <li class="list-group-item">Morss <span class="hinnad">0.2€</span></li>
+
+            $joogid = array(
+                array (
+                    'nimetus' => 'Mahl',
+                    'hind' => '0.8€'
+                ),
+                array (
+                    'nimetus' => 'Piim',
+                    'hind' => '1.0€'
+                ),
+                array (
+                    'nimetus' => 'Morss',
+                    'hind' => '0.5€'
+                ),
+            );
+
+            foreach ($joogid as $jook=>$info3) {
+                echo '<ul class="list-group list-group-flush">'.
+                    '<li class="list-group-item">'.$info3['nimetus']
+                    .' <span class="hinnad">'.$info3['hind'].'<br>'.'
+                    <span class="hinnad2">'.soodus($info3['hind'], 15).'€'.'</span> </li>
             </ul>';
+            }
             ?>
         </div>
     </div>
