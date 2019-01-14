@@ -29,21 +29,35 @@
             $praed = array(
                     array(
                         'nimetus' => 'Sealihapada ploomide ja aprikoosiga',
-                        'kirejldus' => 'sealihapada, lisand, salat, leib',
-                        'hind' => '4.3€'
+                        'kirjeldus' => 'sealihapada, lisand, salat, leib',
+                        'hind' => '2.65€'
+                    ),
+                    array (
+                        'nimetus' => 'Praetud kanakints',
+                        'kirjeldus' => 'Kints, lisand, kaste, leib, salat',
+                        'hind' => '2.50€'
+                    ),
+                    array (
+                        'nimetus' => 'Hakklihakaste',
+                        'kirjeldus' => 'hakklihakaste, lisand, salat, leib',
+                        'hind' => '2.45€'
+                    ),
+                    array (
+                        'nimetus' => 'Kartul, kaste, salat, leib',
+                        'kirjeldus' => '',
+                        'hind' => '1.38€'
+                    ),
+                    array (
+                        'nimetus' => 'Hakklihakaste 1/2',
+                        'kirjeldus' => 'hakklihakaste, lisand, salat, leib',
+                        'hind' => '1.30€'
                     ),
             );
             foreach ($praed as $praad=>$info) {
-            echo '<ul class="list-group list-group-flush">';
-                echo '<li class="list-group-item">'.$info['nimetus'].' <br>'
-                    .$info['kirjeldus'].' <span class="hinnad">'.$info['hind'].'</span></li>';
-                echo'<li class="list-group-item">Praetud kanakints <br>
-                    Kints, lisand, kaste, leib, salat <span class="hinnad">3.8€</span></li>
-                <li class="list-group-item">Hakklihakaste <br>
-                    hakklihakaste, lisand, salat, leib <span class="hinnad">3.2€</span></li>
-                <li class="list-group-item">Kartulipuder <br></br>Kartul, kaste, salat, leib <span class="hinnad">2.9€</span></li>
-                <li class="list-group-item">Hakklihakaste 1/2 <br>
-                    hakklihakaste, lisand, salat, leib <span class="hinnad">2.8€</span></li>
+            echo '<ul class="list-group list-group-flush">'.
+                    '<li class="list-group-item">'.$info['nimetus'].' <br>'
+                    .$info['kirjeldus'].' <span class="hinnad">'.$info['hind'].'</span></li>
+               
             </ul>';
             }
             ?>
