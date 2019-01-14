@@ -63,9 +63,9 @@
             foreach ($praed as $praad=>$info) {
             echo '<ul class="list-group list-group-flush">'.
                     '<li class="list-group-item">'.$info['nimetus'].' <br>'
-                    .$info['kirjeldus'].' <span class="hinnad">'.$info['hind'].'<br>'.'
-                    <span class="hinnad2">'.soodus($info['hind'], 15).'€'.'</span> </li>
-               
+                    .$info['kirjeldus'].' <span class="hinnad">'.$info['hind'].'</span><br><br>'.'
+                     <span class="hinnad2">'.soodus($info['hind'], 15).'€'.'</span>
+                   </li>
             </ul>';
             }
             ?>
@@ -81,22 +81,22 @@
             $magustoidud = array(
                 array (
                     'nimetus' => 'Rosinakissell vahukoorega',
-                    'hind' => '1.4€'
+                    'hind' => '1.40€'
                 ),
                 array (
                     'nimetus' => 'Mannavaht piimaga',
-                    'hind' => '1.2€'
+                    'hind' => '1.20€'
                 ),
                 array (
                     'nimetus' => 'Moosisai',
-                    'hind' => '0.4€'
+                    'hind' => '0.40€'
                 ),
             );
 
             foreach ($magustoidud as $magustoit=>$info2) {
                 echo '<ul class="list-group list-group-flush">'.
                     '<li class="list-group-item">'.$info2['nimetus']
-                    .' <span class="hinnad">'.$info2['hind'].'<br>'.'
+                    .' <span class="hinnad">'.$info2['hind'].'</span><br><br>'.'
                     <span class="hinnad2">'.soodus($info2['hind'], 15).'€'.'</span> </li>
             </ul>';
             }
@@ -113,22 +113,22 @@
             $joogid = array(
                 array (
                     'nimetus' => 'Mahl',
-                    'hind' => '0.8€'
+                    'hind' => '0.80€'
                 ),
                 array (
                     'nimetus' => 'Piim',
-                    'hind' => '1.0€'
+                    'hind' => '1.00€'
                 ),
                 array (
                     'nimetus' => 'Morss',
-                    'hind' => '0.5€'
+                    'hind' => '0.50€'
                 ),
             );
 
             foreach ($joogid as $jook=>$info3) {
                 echo '<ul class="list-group list-group-flush">'.
                     '<li class="list-group-item">'.$info3['nimetus']
-                    .' <span class="hinnad">'.$info3['hind'].'<br>'.'
+                    .' <span class="hinnad">'.$info3['hind'].'</span><br><br>'.'
                     <span class="hinnad2">'.soodus($info3['hind'], 15).'€'.'</span> </li>
             </ul>';
             }
