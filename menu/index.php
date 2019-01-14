@@ -26,11 +26,18 @@
                 Praed<br> <i class="fas fa-utensils"></i>
             </div>
             <?php
-            echo'
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Sealihapada ploomide ja aprikoosiga <br>
-                    sealihapada, lisand, salat, leib <span class="hinnad">4.3€</span></li>
-                <li class="list-group-item">Praetud kanakints <br>
+            $praed = array(
+                    array(
+                        'nimetus' => 'Sealihapada ploomide ja aprikoosiga',
+                        'kirejldus' => 'sealihapada, lisand, salat, leib',
+                        'hind' => '4.3€'
+                    ),
+            );
+            foreach ($praed as $praad=>$info) {
+            echo '<ul class="list-group list-group-flush">';
+                echo '<li class="list-group-item">'.$info['nimetus'].' <br>'
+                    .$info['kirjeldus'].' <span class="hinnad">'.$info['hind'].'</span></li>';
+                echo'<li class="list-group-item">Praetud kanakints <br>
                     Kints, lisand, kaste, leib, salat <span class="hinnad">3.8€</span></li>
                 <li class="list-group-item">Hakklihakaste <br>
                     hakklihakaste, lisand, salat, leib <span class="hinnad">3.2€</span></li>
@@ -38,6 +45,7 @@
                 <li class="list-group-item">Hakklihakaste 1/2 <br>
                     hakklihakaste, lisand, salat, leib <span class="hinnad">2.8€</span></li>
             </ul>';
+            }
             ?>
         </div>
 
