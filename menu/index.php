@@ -26,8 +26,7 @@
                 Praed<br> <i class="fas fa-utensils"></i>
             </div>
             <?php
-            echo '
-            ?>
+            echo'
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Sealihapada ploomide ja aprikoosiga <br>
                     sealihapada, lisand, salat, leib <span class="hinnad">4.3€</span></li>
@@ -48,8 +47,7 @@
                 Magustoidud<br> <i class="fas fa-utensil-spoon"></i>
             </div>
             <?php
-            echo '
-            ?>
+            echo'
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Rosinakissell vahukoorega <span class="hinnad">1.2€</span></li>
                 <li class="list-group-item">Kuivatatud puuviljad <span class="hinnad">1.6€</span></li>
@@ -64,8 +62,7 @@
                 Joogid<br> <i class="fas fa-coffee"></i>
             </div>
             <?php
-            echo '
-            ?>
+            echo'
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Mahl <span class="hinnad">0.6€</span></li>
                 <li class="list-group-item">Piim <span class="hinnad">0.4€</span></li>
@@ -78,4 +75,4 @@
     </div>
 
 </body>
-</html>'
+</html>
