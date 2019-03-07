@@ -1,37 +1,11 @@
-.pealkiri {
-    text-align: center;
-    margin: 30px 0px 30px 0px;
+a {
+    text-decoration: none;
 }
 
-.praed {
-    margin: 40px auto 40px auto;
+a:hover {
+    text-decoration: none !important;
 }
 
-
-.praed2 {
-    text-align: center;
+ul {
+    list-style-type: none;
 }
-
-.hinnad {
-    float: right;
-    color: #fff;
-    background-color: #ff5176;
-    border-radius: 20%;
-    padding: 2px;
-    text-align: center;
-}
-
-span.hinnad2 {
-    float: right;
-    color: #fff;
-    background-color: green;
-    border-radius: 20%;
-    padding: 2px;
-    text-align: center;
-}
-
-.soodushind {
-    float: left;
-}
-
-
